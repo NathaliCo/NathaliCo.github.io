@@ -1,48 +1,51 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 body {
   text-align:center;
-  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
   color:#555;
 	font-family: 'Raleway', sans-serif;
-	height:100vh;
-	background-repeat: no-repeat;
- 
+}
+
+/* Presentation */
+
+.presentation{
+  position: absolute;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+	padding-top:40vh;
+
+	width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0,0,0);
 }
 
-/* Presentation */
-div {
-	font-weight: 12.5rem;
-	margin: 0.4em 0;
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
-}
-
-.namePresentation:first-of-type {    /* For increasing performance 
+.namePresentation {    /* For increasing performance 
                        ID/Class should've been used. 
                        For a small demo 
                        it's okaish for now */
   animation: showup 7s infinite;
 color: black;
-font-size: 3.5rem;
+font-size: 3.5em;
+font-weight: 12.5rem;
+margin: 0.4em 0;
+display:inline-block;
+overflow:hidden;
 }
 
-.frontendPresentation:last-of-type {
+.frontendPresentation {
 	color:red;
-	font-size: 3.5rem;
+	font-size: 3.5em;
   width:0px;
 	animation: reveal 7s infinite;
-	margin: 0.4rem 0;
+	margin: 0.4em 0;
 }
 
-.frontendPresentation:last-of-type span {
-  margin-left:-22.1875rem;
+.frontendPresentation span {
   animation: slidein 7s infinite;
+  
 }
 
 .builtTogether{
@@ -57,34 +60,83 @@ font-size: 3.5rem;
 }
 
 @keyframes slidein {
-    0% { margin-left:-50rem; }
-    20% { margin-left:-50rem; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
+    0% { margin-left:-100rem; }
+    20% { margin-left:-100rem; }
+    35% { margin-left:80px; }
+    100% { margin-left:80px; }
 }
 
 @keyframes reveal {
     0% {opacity:0;width:0px;}
     20% {opacity:1;width:0px;}
-    30% {width:43.75rem;}
+    30% {width:120rem;}
     80% {opacity:1;}
-    100% {opacity:0;width:43.75rem;}
+    100% {opacity:0;width:120rem;}
 }
 
-.presentation{
-	padding-top:40vh;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	z-index: 10;
+@media (max-width: 425px){
+  .presentation{
+    width: 100%;
+    height: 100%;
+  margin-left: -1rem;
+  margin-top: -1rem;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+  }
+  
+  .namePresentation {  
+  animation: showup 7s infinite;
+  color: black;
+  font-size: 2.1em;
+   display:inline-block;
+  overflow:hidden;
+  margin-left: 0;
+  
+  }
+  
+  .frontendPresentation {
+    color:red;
+    font-size: 1.2em;
+    width:0px;
+    animation: reveal 7s infinite;
+  }
+  
+  .frontendPresentation span {
+    animation: slidein 7s infinite;
+    
+  }
+  .builtTogether{
+    animation: showup 30s infinite;
+    font-size: 1.2em;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+   
+  @keyframes slidein {
+    0% { margin-left:-50rem; }
+    20% { margin-left:-50rem; }
+    35% { margin-left:0%; }
+    100% { margin-left:0%; }
 }
 
-.sp-container h2.frame-3 {
-	-webkit-animation-delay: 12s;
-	-moz-animation-delay: 12s;
-	-ms-animation-delay: 12s;
-	animation-delay: 12s;
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:100%;}
+      80% {opacity:1;}
+      100% {opacity:0;width:100%;}
+  }
+  
 }
+/* End welcome page*/
 
 /* Home page */
 .homePage{
@@ -97,16 +149,16 @@ font-size: 3.5rem;
 .lta-source {
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  font-weight: 300;
-	font-size: 0.12rem;
+  letter-spacing: 0.4em;
+  font-weight: 18.75rem;
+	font-size: 0.12em;
 	margin-left: 40%;
 	
 	float: left;
-  width: 24rem;
-  height: 24rem;
-  line-height: 23.5rem;
-  border: 0.3rem solid #000;
+  width: 24em;
+  height: 24em;
+  line-height: 23.5em;
+  border: 0.3em solid #000;
   text-align: center;
 }
 
@@ -114,20 +166,20 @@ font-size: 3.5rem;
   color: #000;
   text-align: center;
   background-color: #f6f6f6;
-  font-family: Raleway, sans-serif;
-  line-height: 3rem;
-  padding-top: 11rem;
-  padding-bottom: 13rem;
+	font-family: 'Raleway', sans-serif;
+  line-height: 3em;
+  padding-top: 11em;
+  padding-bottom: 13em;
 }
 
 .nf-r1 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-style: normal;
   font-weight: 50rem;
-  line-height: 1.2rem;
+  line-height: 1.2em;
   position: relative;
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 .nf-r1::after {
@@ -135,7 +187,7 @@ font-size: 3.5rem;
   position: absolute;
   height: 0.0625rem;
   width: 20%;
-  bottom: -0.5rem;
+  bottom: -0.5em;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -143,18 +195,17 @@ font-size: 3.5rem;
 }
 
 .nf-r2 {
-  font-family: Lora, serif;
-  font-size: 8rem;
-  line-height: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8em;
+  line-height: 1em;
   font-weight: 18.75rem;
-  font-style: italic;
 }
 
 /* TopNav */
 .socialNetworks{
 	width: 100%;
 	height: 5rem;
-	
+	margin-right: -10%;
 }
 .container{
 	float: right;
@@ -164,7 +215,7 @@ div.container a
 {
     color: #000;
     text-decoration: none;
-    font: 2.5rem Raleway;
+    font: 2.5rem 'Raleway';
     margin: 0px 0.625rem;
     padding: 0.625rem 0.625rem;
 		position: relative;
@@ -202,3 +253,9 @@ div.brackets a:hover:before, div.brackets a:hover:after
     transform: translateX(0rem);
 }
 
+.navigation{
+   margin-right: 35%; 
+
+
+
+}
