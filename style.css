@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+  text-align:center;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+	font-family: 'Raleway', sans-serif;
+	height:100vh;
+	background-repeat: no-repeat;
+ 
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+/* Presentation */
+div {
+	font-weight: 12.5rem;
+	margin: 0.4em 0;
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.namePresentation:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+color: black;
+font-size: 3.5rem;
+}
+
+.frontendPresentation:last-of-type {
+	color:red;
+	font-size: 3.5rem;
+  width:0px;
+	animation: reveal 7s infinite;
+	margin: 0.4rem 0;
+}
+
+.frontendPresentation:last-of-type span {
+  margin-left:-22.1875rem;
+  animation: slidein 7s infinite;
+}
+
+.builtTogether{
+	animation: showup 30s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-50rem; }
+    20% { margin-left:-50rem; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:43.75rem;}
+    80% {opacity:1;}
+    100% {opacity:0;width:43.75rem;}
+}
+
+.presentation{
+	padding-top:40vh;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.sp-container h2.frame-3 {
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
+}
+
+/* Home page */
+.homePage{
+	margin-right: -1%;
+  margin-left: -1%;
+  position: relative;
+}
+
+
+.lta-source {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+	font-size: 0.12rem;
+	margin-left: 40%;
+	
+	float: left;
+  width: 24rem;
+  height: 24rem;
+  line-height: 23.5rem;
+  border: 0.3rem solid #000;
+  text-align: center;
+}
+
+.nf {
+  color: #000;
+  text-align: center;
+  background-color: #f6f6f6;
+  font-family: Raleway, sans-serif;
+  line-height: 3rem;
+  padding-top: 11rem;
+  padding-bottom: 13rem;
+}
+
+.nf-r1 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 50rem;
+  line-height: 1.2rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.nf-r1::after {
+  content: '';
+  position: absolute;
+  height: 0.0625rem;
+  width: 20%;
+  bottom: -0.5rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.nf-r2 {
+  font-family: Lora, serif;
+  font-size: 8rem;
+  line-height: 1rem;
+  font-weight: 18.75rem;
+  font-style: italic;
+}
+
+/* TopNav */
+.socialNetworks{
+	width: 100%;
+	height: 5rem;
+	
+}
+.container{
+	float: right;
+	margin-right: 30rem;
+}
+div.container a
+{
+    color: #000;
+    text-decoration: none;
+    font: 2.5rem Raleway;
+    margin: 0px 0.625rem;
+    padding: 0.625rem 0.625rem;
+		position: relative;
+		cursor: pointer;
+		
+}
+
+/* Brackets go out */
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 3.125rem;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+  content: '<';
+    left: -1rem;
+    transform: translateX(0.625rem);
+}
+
+div.brackets a:after
+{
+  content: '>';
+    right: -1rem;
+    transform: translateX(-0.625rem);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0rem);
+}
+
