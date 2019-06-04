@@ -13,7 +13,7 @@ body {
 /* Presentation */
 .presentation{
   text-align:center;
-  margin-left: -4.5%;
+
   position: absolute;
   background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
 	padding-top:40vh;
@@ -28,7 +28,7 @@ body {
  
 animation: showup 7s infinite;
 color: black;
-font-size: 3.5em;
+font-size: 3.0em;
 font-weight: 12.5rem;
 display:inline-block;
 overflow:hidden;
@@ -144,9 +144,7 @@ overflow:hidden;
   text-transform: uppercase;
   letter-spacing: 0.4em;
   font-weight: 18.75rem;
-	font-size: 0.12em;
-	margin-left: 40%;
-	float: left;
+  font-size: 0.12em;
   width: 24em;
   height: 24em;
   line-height: 23.5em;
@@ -161,7 +159,7 @@ overflow:hidden;
 	font-family: 'Raleway', sans-serif;
   line-height: 3em;
   padding-top: 11em;
-  padding-bottom: 13em;
+  padding-bottom: 4em;
 }
 
 .nf-r1 {
@@ -177,12 +175,11 @@ overflow:hidden;
 .nf-r1::after {
   content: '';
   position: absolute;
-  height: 0.0625rem;
+  height: 100%;
   width: 20%;
   bottom: -0.5em;
   right: 0;
   left: 0;
-  margin: 0 auto;
   background-color: #000;
 }
 
@@ -191,20 +188,18 @@ overflow:hidden;
   font-size: 8em;
   line-height: 1em;
   font-weight: 18.75rem;
+ 
 }
 
 /* TopNav */
 .socialNetworks{
 	width: 100%;
 	height: 5rem;
-	margin-right: -10%;
 }
-.container{
-	float: right;
-	margin-right: 30rem;
-}
+
 div.container a
 {
+  float: right;
     color: #000;
     text-decoration: none;
     font: 2.5rem 'Raleway';
@@ -245,16 +240,104 @@ div.brackets a:hover:before, div.brackets a:hover:after
     transform: translateX(0rem);
 }
 
-.navigation{
-   margin-right: 35%; 
-}
-
-@media (max-width: 425px){
+@media screen and (max-width: 425px){
+  .lta-source {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: 18.75rem;
+    font-size: 0.12em;
+    width: 24em;
+    height: 24em;
+    line-height: 23.5em;
+    border: 0.3em solid #000;
+    text-align: center;
+  }
+  
+  .nf {
+    color: #000;
+    text-align: center;
+    background-color: #f6f6f6;
+    font-family: 'Raleway', sans-serif;
+    line-height: 3em;
+    padding-top: 5%;
+   
+  }
+  
+  .nf-r1 {
+    text-align: center;
+    font-size: .9em;
+    font-style: normal;
+    font-weight: 50rem;
+    line-height: 1.2em;
+    position: relative;
+    display: inline-block;
+    margin-right: 3%;
+  
+  }
+  
+  .nf-r1::after {
+    content: '';
+    position: absolute;
+    height: 0.0625rem;
+    width: 90%;
+    margin-left: 5%;
+    bottom: -0.5em;
+    background-color: #000;
+  }
   .nf-r2 {
     font-family: 'Raleway', sans-serif;
     font-size: 3em;
     line-height: 1em;
     font-weight: 18.75rem;
+    margin-right: 3%;
   }
   
+  div.container a
+  {
+    float: right;
+      color: #000;
+      text-decoration: none;
+      font: 2.5rem 'Raleway';
+      margin: 0px 0.625rem;
+    padding: 0.625rem 0.625rem;
+      position: relative;
+      cursor: pointer;
+      
+  }
+  
+  /* Brackets go out */
+  div.brackets a:before, div.brackets a:after
+  {
+      position: absolute;
+      opacity: 0;
+      top: 0px;
+      transition: all 0.3s;
+  }
+  
+  div.brackets a:before
+  {
+    content: '<';
+      left: -1rem;
+      transform: translateX(0.625rem);
+  }
+  
+  div.brackets a:after
+  {
+    content: '>';
+      right: -1rem;
+      transform: translateX(-0.625rem);
+  }
+  
+  div.brackets a:hover:before, div.brackets a:hover:after
+  {
+      opacity: 1;
+      transform: translateX(0rem);
+  }
+  
+  .navigation{
+    width: 100%;
+    height: 5rem;
+  }
+
 }
