@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 body {
+  background-color: rgb(229, 236, 229);
   color:#555;
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -149,6 +150,7 @@ color:red;
   /* background-color: #465362; */
   position: relative;
   background-color: rgb(229, 236, 229);
+  
 }
 
 .lta-source {
@@ -170,8 +172,8 @@ color:red;
   /* background-color: #EDE7D9; */
 	font-family: 'Raleway', sans-serif;
   line-height: 3em;
-  padding-top: 5%;
-  padding-bottom: 2em;
+  padding-top: 3rem;
+  padding-bottom: 5em;
 }
 
 .nf-r1 {
@@ -219,9 +221,10 @@ margin-right: 4%;
 
 nav.navigation{
   float: left ;
- 
   background-color: #1B2735;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 div.container a, div.containerNav a
@@ -236,6 +239,7 @@ div.container a, div.containerNav a
 		
 }
 div.container a{
+  margin-top: .5rem;
   float: right;
 }
 div.containerNav a{
@@ -352,10 +356,19 @@ div.brackets a:hover:before, div.brackets a:hover:after
   }
   }
 
+  @media screen and (min-width: 769px){
+    .lta-source {
+     
+      margin-left:3rem ;
+    }
 
-
-
-
+    div.container a{
+      margin-right: 5rem;
+    }
+    div.containerNav a{
+     margin-left: 3rem;
+    }
+  }
 
   /* .large-header {
     position: relative;
