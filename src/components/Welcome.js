@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './welcome.css';
+import './welcome.sass';
 
 export default class HomePage extends Component {
     constructor() {
