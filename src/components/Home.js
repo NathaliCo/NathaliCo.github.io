@@ -1,9 +1,34 @@
 import React, { Component } from 'react'
 
 export default class WelcomePage extends Component {
+  constructor() {
+		super();
+		this.state = {
+      shown: true,
+      transition: false,
+		};
+    }	
+    toggle() {
+      this.setState({
+        shown: !this.state.shown,
+         transition: !this.state.transition
+          });
+    }
+      componentDidMount=()=>{
+              setTimeout (()=>this.toggle(),5000)
+          }
+          
+         
     render() {
+  
+      
+      var hidden = {
+        display: this.state.shown ? "none" : "block",
+        // display: this.state.shown ? "homePage-none" : "homePage-block"
+      }
+      
         return (
-            <section className = "homePage" >
+            <section className = "homePage" style={hidden}>
         <nav className = "socialNetworks">
                 <div className="container brackets">
                         <a><i className="lni-github-original"></i></a>
