@@ -158,8 +158,8 @@ overflow:hidden;
   background-color: #f6f6f6;
 	font-family: 'Raleway', sans-serif;
   line-height: 3em;
-  padding-top: 11em;
-  padding-bottom: 4em;
+  padding-top: 5%;
+  padding-bottom: 2em;
 }
 
 .nf-r1 {
@@ -175,8 +175,10 @@ overflow:hidden;
 .nf-r1::after {
   content: '';
   position: absolute;
-  height: 100%;
-  width: 20%;
+  height: 0.0625rem;
+  width: 90%;
+margin-left: 4%;
+margin-right: 4%;
   bottom: -0.5em;
   right: 0;
   left: 0;
@@ -185,7 +187,7 @@ overflow:hidden;
 
 .nf-r2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 8em;
+  font-size: 3em;
   line-height: 1em;
   font-weight: 18.75rem;
  
@@ -194,7 +196,13 @@ overflow:hidden;
 /* TopNav */
 .socialNetworks{
 	width: 100%;
-	height: 5rem;
+  height: 5rem;
+  margin-left: -8%;
+}
+
+nav.navigation{
+  float: left ;
+  margin-left: 2%;
 }
 
 div.container a
@@ -240,104 +248,40 @@ div.brackets a:hover:before, div.brackets a:hover:after
     transform: translateX(0rem);
 }
 
+.descpritionHome{
+  font-size: .8rem;
+  line-height: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 @media screen and (max-width: 425px){
-  .lta-source {
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 0.4em;
-    font-weight: 18.75rem;
-    font-size: 0.12em;
-    width: 24em;
-    height: 24em;
-    line-height: 23.5em;
-    border: 0.3em solid #000;
-    text-align: center;
-  }
-  
   .nf {
-    color: #000;
-    text-align: center;
-    background-color: #f6f6f6;
-    font-family: 'Raleway', sans-serif;
     line-height: 3em;
     padding-top: 5%;
-   
-  }
-  
-  .nf-r1 {
-    text-align: center;
-    font-size: .9em;
-    font-style: normal;
-    font-weight: 50rem;
-    line-height: 1.2em;
-    position: relative;
-    display: inline-block;
-    margin-right: 3%;
-  
+
   }
   
   .nf-r1::after {
-    content: '';
-    position: absolute;
-    height: 0.0625rem;
-    width: 90%;
-    margin-left: 5%;
     bottom: -0.5em;
     background-color: #000;
+    
   }
+
   .nf-r2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 3em;
-    line-height: 1em;
-    font-weight: 18.75rem;
+    font-size: 1.6em;
     margin-right: 3%;
   }
   
-  div.container a
-  {
-    float: right;
-      color: #000;
-      text-decoration: none;
-      font: 2.5rem 'Raleway';
-      margin: 0px 0.625rem;
-    padding: 0.625rem 0.625rem;
-      position: relative;
-      cursor: pointer;
-      
-  }
-  
   /* Brackets go out */
-  div.brackets a:before, div.brackets a:after
-  {
-      position: absolute;
-      opacity: 0;
-      top: 0px;
-      transition: all 0.3s;
-  }
-  
-  div.brackets a:before
-  {
-    content: '<';
-      left: -1rem;
-      transform: translateX(0.625rem);
-  }
-  
-  div.brackets a:after
-  {
-    content: '>';
-      right: -1rem;
-      transform: translateX(-0.625rem);
-  }
-  
-  div.brackets a:hover:before, div.brackets a:hover:after
-  {
-      opacity: 1;
-      transform: translateX(0rem);
-  }
-  
   .navigation{
     width: 100%;
     height: 5rem;
+   
+    
   }
-
-}
+  nav.navigation{
+    margin-left: 0%;
+  }
+  }
