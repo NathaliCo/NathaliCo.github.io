@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import SocialNetworksBar from './SocialNetworksBar'
+import BottomNavigation from './BottomNavigation'
 export default class WelcomePage extends Component {
   constructor() {
 		super();
@@ -29,12 +30,7 @@ export default class WelcomePage extends Component {
       
         return (
             <section className = "homePage" style={hidden}>
-        <nav className = "socialNetworks">
-                <div className="container brackets">
-                        <a><i className="lni-github-original"></i></a>
-                        <a><i className="lni-linkedin-original"></i></a>
-                      </div>
-        </nav>
+       <SocialNetworksBar/>
       <div className="nf">
           <div>
             <h1 className="nf-r2 ">Nathalie Cortez</h1>
@@ -46,17 +42,7 @@ export default class WelcomePage extends Component {
           </div>
           
         </div>
-        <nav className= "navigation">
-                <div className="containerNav brackets">
-                        <a className= "navIcons"><i className="lni-home"></i></a>
-                        <a className= "navIcons"><i className="lni-user"></i></a>
-                        <a className= "navIcons"><i className="lni-code-alt"></i></a>
-                        <a className= "navIcons"><i className="lni-folder"></i></a>
-                        <a className= "navIcons"><i className="lni-envelope"></i></a>
-                        
-                      </div>
-                    
-        </nav>
+        <BottomNavigation/>
     </section>
         )
     }

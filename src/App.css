@@ -11,6 +11,7 @@ body {
 
 /* Presentation */
 .presentation{
+ 
   text-align:center;
   position: absolute;
   
@@ -34,9 +35,8 @@ body {
 
 }
 .namePresentation {
- 
 animation: showup 7s ;
-color: black;
+color:#99B898;
 font-size: 3.0em;
 font-weight: 12.5rem;
 display:inline-block;
@@ -44,7 +44,7 @@ overflow:hidden;
 }
 
 .frontendPresentation {
-	color:red;
+color:red;
 	font-size: 3.5em;
   width:0px;
 	animation: reveal 7s ;
@@ -55,6 +55,7 @@ overflow:hidden;
 }
 
 .builtTogether{
+  color:#555;
   animation: showup 30s ;
 }
 
@@ -91,7 +92,7 @@ overflow:hidden;
   
   .namePresentation {  
   animation: showup 7s ;
-  color: black;
+ 
   font-size: 2.1em;
    display:inline-block;
   overflow:hidden;
@@ -147,6 +148,7 @@ overflow:hidden;
 .homePage{
   /* background-color: #465362; */
   position: relative;
+  background-color: rgb(229, 236, 229);
 }
 
 .lta-source {
@@ -163,9 +165,8 @@ overflow:hidden;
 }
 
 .nf {
-  color: #000;
+  color: black;
   text-align: center;
-
   /* background-color: #EDE7D9; */
 	font-family: 'Raleway', sans-serif;
   line-height: 3em;
@@ -174,6 +175,7 @@ overflow:hidden;
 }
 
 .nf-r1 {
+  color:#555;
   font-size: 1.5em;
   font-style: normal;
   font-weight: 50rem;
@@ -181,6 +183,7 @@ overflow:hidden;
   position: relative;
   display: inline-block;
   margin-bottom: 2em;
+  
 }
 
 .nf-r1::after {
@@ -193,14 +196,13 @@ margin-right: 4%;
   bottom: -0.5em;
   right: 0;
   left: 0;
-  /* background-color: #000; */
 }
 
 .nf-r2 {
   font-family: 'Raleway', sans-serif;
   font-size: 3em;
   line-height: 1em;
-  font-weight: 18.75rem;
+
  
 }
 
@@ -209,20 +211,23 @@ margin-right: 4%;
 	width: 100%;
   height: 5rem;
   width: 100%;
+  /* background-color: #2A363B; */
+  /* background-color: #99B898; */
+  /* background-color: #FECEA8; */
+  background-color: #1B2735;
 }
 
 nav.navigation{
   float: left ;
-  margin-left: 2%;
-
+ 
+  background-color: #1B2735;
   width: 100%;
 }
 
-div.container a,div.containerNav a
+div.container a, div.containerNav a
 {
   float: right;
-    color: #000;
-    text-decoration: none;
+    color: whitesmoke;
     font: 2.5rem 'Raleway';
     margin: 0px 0.625rem;
   padding: 0.625rem 0.625rem;
@@ -230,7 +235,12 @@ div.container a,div.containerNav a
 		cursor: pointer;
 		
 }
-
+div.container a{
+  float: right;
+}
+div.containerNav a{
+  float: left;
+}
 /* Brackets go out */
 div.brackets a:before, div.brackets a:after
 {
@@ -270,7 +280,9 @@ div.brackets a:hover:before, div.brackets a:hover:after
 }
 
 @media screen and (max-width: 320px){
-
+  div.containerNav{
+    margin-left: 0%;
+  }
   .nf {
     line-height: 3em;
     padding-top: 5%;
@@ -287,9 +299,8 @@ div.brackets a:hover:before, div.brackets a:hover:after
 
   div.containerNav a
 {
-    color: #000;
     text-decoration: none;
-    font: 2.5rem 'Raleway';
+    font: 2rem 'Raleway';
     margin: 0px 0.1%;
 		position: relative;
     cursor: pointer;
@@ -299,9 +310,11 @@ div.brackets a:hover:before, div.brackets a:hover:after
     /* background-color: #000; */
     
   }
-
+.nf-r1{
+  font-size: 1em;
+}
   .nf-r2 {
-    font-size: 1.6em;
+    font-size: 1.7em;
     margin-right: 3%;
   }
   
@@ -317,14 +330,26 @@ div.brackets a:hover:before, div.brackets a:hover:after
   }
   }
 
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 425px){
+    div.containerNav{
+     /* margin-left: 13%; */
+    }
     div.containerNav a {
     float: left;
-    color: #000;
-    margin: 0px 0%;
+    justify-items: center;
+    font: 2.3rem 'Raleway';
 		position: relative;
     cursor: pointer;
+    margin: 0px 0.1%;
 }
+
+.nf-r1{
+  font-size: 1em;
+}
+  .nf-r2 {
+    font-size: 1.7em;
+    margin-right: 3%;
+  }
   }
 
 
