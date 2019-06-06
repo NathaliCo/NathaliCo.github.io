@@ -4,6 +4,7 @@ import BottomNavigation from './BottomNavigation'
 import { fadeIn } from 'react-animations'
 import { bounce } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
+import '../App.css';
 const styles = {
   bounce: {
     animation: 'x 2s',
@@ -33,8 +34,6 @@ export default class WelcomePage extends Component {
           
          
     render() {
-  
-      
       var hidden = {
         display: this.state.shown ? "none" : "block",
       }

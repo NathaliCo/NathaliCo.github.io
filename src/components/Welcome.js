@@ -13,15 +13,23 @@ export default class HomePage extends Component {
 		super();
 		this.state = {
             style: styles,
+            shown: true,
 		};
     }	
     toggle() {
 		this.setState({
             style: styles.fadeOut,
         });
-	}
+  }
+  
+  style() {
+    this.setState({
+      shown: !this.state.shown,
+        });
+  }
 		componentDidMount=()=>{
             setTimeout (()=>this.toggle(),4000)
+            //setTimeout(()=>this.style(),7000)
         }
         
        
@@ -29,6 +37,7 @@ export default class HomePage extends Component {
 		
         return (
           <StyleRoot>
+            <div style= {this.state.shown}>
             <section  className = "presentation" style={this.state.style}>
        <div id="stars"></div>
        <div id="stars2"></div>
@@ -39,6 +48,7 @@ export default class HomePage extends Component {
 </div>
 <h2 className = "builtTogether">Let´s built together </h2>
 </section>
+</div>
 </StyleRoot>
         )
     }
