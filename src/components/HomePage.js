@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Home from './Home';
-import ModalPage from './ModalPage'
+
+import Welcome from './Welcome'
 
 import '../App.css';
 
@@ -11,7 +12,7 @@ export default class HomePage extends Component {
 		render(){
         return (
             <React.Fragment>
-            <ModalPage/>
+            <Welcome/>
            <Home/>
            </React.Fragment>
         )

@@ -1,0 +1,119 @@
+.homePage{
+    /* background-color: #465362; */
+    position: relative;
+    
+    background-color: rgb(229, 236, 229);
+    
+  }
+  
+  .lta-source {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: 18.75rem;
+    font-size: 0.12em;
+    width: 24em;
+    height: 24em;
+    line-height: 23.5em;
+    border: 0.3em solid #000;
+    text-align: center;
+  }
+  
+  .nf {
+    color: black;
+    text-align: center;
+    /* background-color: #EDE7D9; */
+      font-family: 'Raleway', sans-serif;
+    line-height: 3em;
+    padding-top: 3rem;
+    padding-bottom: 5em;
+    /* margin-bottom: 0; */
+  }
+  
+  .nf-r1 {
+    color:#555;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 50rem;
+    line-height: 1.2em;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2em;
+    
+  }
+  
+  .nf-r1::after {
+    content: '';
+    position: absolute;
+    height: 0.0625rem;
+    width: 90%;
+  margin-left: 4%;
+  margin-right: 4%;
+    bottom: -0.5em;
+    right: 0;
+    left: 0;
+  }
+  
+  .nf-r2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    line-height: 1em;
+  
+   
+  }
+
+  .descpritionHome{
+    font-size: .8rem;
+    line-height: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  @media screen and (max-width: 320px){
+
+    .nf {
+      line-height: 3em;
+      padding-top: 5%;
+  
+    }
+    
+    .nf-r1::after {
+      bottom: -0.5em;
+      /* background-color: #000; */
+      
+    }
+  .nf-r1{
+    font-size: 1em;
+  }
+    .nf-r2 {
+      font-size: 1.7em;
+      margin-right: 3%;
+    }
+
+    }
+  
+    @media screen and (max-width: 425px){
+  .nf-r1{
+    font-size: 1em;
+  }
+    .nf-r2 {
+      font-size: 1.7em;
+      margin-right: 3%;
+    }
+    }
+  
+    @media screen and (min-width: 769px){
+      .lta-source {
+       
+        margin-left:3rem ;
+      }
+
+      .descpritionHome{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
