@@ -5,7 +5,7 @@ import { fadeIn } from 'react-animations'
 import { bounce } from 'react-animations';
 import { bounceInRight } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
-import './home.css';
+import '../App.css';
 const styles = {
   bounce: {
     animation: 'x 2s',

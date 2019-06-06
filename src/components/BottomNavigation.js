@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
-import './navigation.css'
+import '../App.css'
 export default class BottomNavigation extends Component {
     render() {
         return (

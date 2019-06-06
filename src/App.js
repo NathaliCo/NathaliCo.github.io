@@ -5,7 +5,6 @@ import Knowledge from './components/Knowledge'
 import Proyects from './components/Proyects'
 import Contact from './components/Contact'
 import { BrowserRouter, Route } from "react-router-dom";
-import './App.css';
 
 function App() {
   
