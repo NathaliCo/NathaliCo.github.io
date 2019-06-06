@@ -1,34 +1,35 @@
 import React, { Component } from 'react'
-
+import { fadeOut } from 'react-animations'
+import Radium, {StyleRoot} from 'radium';
 import './welcome.sass';
-
+const styles = {
+  fadeOut: {
+    animation: 'x 3s',
+    animationName: Radium.keyframes(fadeOut, 'fadeOut')
+  }
+}
 export default class HomePage extends Component {
     constructor() {
 		super();
 		this.state = {
-            shown: true,
-            transition: true,
+            style: styles,
 		};
     }	
     toggle() {
 		this.setState({
-            shown: !this.state.shown,
-            transition: !this.state.transition
+            style: styles.fadeOut,
         });
 	}
 		componentDidMount=()=>{
-            setTimeout (()=>this.toggle(),5000)
+            setTimeout (()=>this.toggle(),4000)
         }
         
        
 	render() {
-		var shown = {
-            display: this.state.shown ? "block" : "none",
-           // display:this.state.transition ? "presentation-block" :"presentation-none"
-		};
 		
         return (
-            <section  className = "presentation" style={shown}>
+          <StyleRoot>
+            <section  className = "presentation" style={this.state.style}>
        <div id="stars"></div>
        <div id="stars2"></div>
        <div id="stars3"></div>
@@ -38,6 +39,7 @@ export default class HomePage extends Component {
 </div>
 <h2 className = "builtTogether">Let´s built together </h2>
 </section>
+</StyleRoot>
         )
     }
 }

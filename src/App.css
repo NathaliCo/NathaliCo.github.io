@@ -38,7 +38,7 @@ body {
 .namePresentation {
 animation: showup 7s ;
 color:#99B898;
-font-size: 3.0em;
+font-size: 5.0em;
 font-weight: 12.5rem;
 display:inline-block;
 overflow:hidden;
@@ -46,7 +46,7 @@ overflow:hidden;
 
 .frontendPresentation {
 color:red;
-	font-size: 3.5em;
+	font-size: 2.5em;
   width:0px;
 	animation: reveal 7s ;
 }
@@ -368,6 +368,13 @@ div.brackets a:hover:before, div.brackets a:hover:after
     div.containerNav a{
      margin-left: 3rem;
     }
+    .descpritionHome{
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
 
   /* .large-header {
@@ -386,6 +393,17 @@ div.brackets a:hover:before, div.brackets a:hover:after
   */
 
 
+  .fadeOut{
+    opacity:0;
+    width:0;
+    height:0;
+    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
 
+}
+.fadeIn{
+    opacity:1;
+    width:100px;
+    height:100px;
+    transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
 
-  
+}
