@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { fadeOut } from 'react-animations'
 import Radium, {StyleRoot} from 'radium';
 import './welcome.sass';
+import './welcomeText.css';
 const styles = {
   fadeOut: {
     animation: 'x 3s',
