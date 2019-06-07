@@ -3,16 +3,15 @@
 	width: 100%;
   height: 5rem;
   width: 100%;
-  /* background-color: #2A363B; */
-  /* background-color: #99B898; */
-  /* background-color: #FECEA8; */
-  background-color: #1B2735;
+  /* background-color: #1B2735; */
+  opacity:0.9;
 }
 
 nav.navigation{
   float: left ;
-  background-color: #1B2735;
+  /* background-color: #1B2735; */
   width: 100%;
+  opacity:0.9;
   position: fixed;
   bottom: 0;
 }
@@ -26,6 +25,7 @@ div.container a, div.containerNav a
   padding: 0.625rem 0.625rem;
 		position: relative;
 		cursor: pointer;
+    text-decoration:none;
 		
 }
 div.container a{
@@ -102,9 +102,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
   }
 
   @media screen and (max-width: 425px){
-    div.containerNav{
-     /* margin-left: 13%; */
-    }
+    
     div.containerNav a {
     float: left;
     justify-items: center;
@@ -113,7 +111,6 @@ div.brackets a:hover:before, div.brackets a:hover:after
     cursor: pointer;
     margin: 0px 0.1%;
 }
-
   }
 
   @media screen and (min-width: 769px){
