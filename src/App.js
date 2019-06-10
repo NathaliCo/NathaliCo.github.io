@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from './components/HomePage'
 import About from './components/About'
-import Knowledge from './components/Knowledge'
+import Skills from './components/Skills'
 import Proyects from './components/Proyects'
 import Contact from './components/Contact'
 import { BrowserRouter, Route } from "react-router-dom";
@@ -14,7 +14,7 @@ function App() {
      <BrowserRouter>
      <Route exact path="/" component={HomePage} />
      <Route path="/about" component={About} />
-     <Route path="/knowledge" component={Knowledge} />
+     <Route path="/skills" component={Skills} />
      <Route path="/proyects" component={Proyects} />
      <Route path="/contact" component={Contact} />
    </BrowserRouter>
