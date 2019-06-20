@@ -1,17 +1,12 @@
 import React, { Component } from 'react'
 import SocialNetworksBar from './SocialNetworksBar'
 import BottomNavigation from './BottomNavigation'
-import { bounce } from 'react-animations';
-import Radium, {StyleRoot} from 'radium';
 import './proyect.css'
 import { proyects } from "./proyects.json";
 import Proyect from "./Proyect"
-const styles = {
-    bounce: {
-      animation: 'x 2s',
-      animationName: Radium.keyframes(bounce, 'bounce')
-    },
-}
+import Title from './Title';
+
+
 export default class ProyectsList extends Component {
     constructor() {
         super();
@@ -23,12 +18,12 @@ export default class ProyectsList extends Component {
     }
     render() {
         return (
-            <StyleRoot>
+            
             <React.Fragment>
                 <SocialNetworksBar/>
 
                 <div className = "proyects mt-40">
-                <h1  style={styles.bounce}>Proyects</h1>
+          <Title  name = "Proyects"/>
 
                     <div className = "row mt-30">
  <Proyect img={this.state.proyect[0].img} name={this.state.proyect[0].name} tools={this.state.proyect[0].tools} enviroment={this.state.proyect[0].enviroment} code = {this.state.proyect[0].code} />
@@ -44,7 +39,7 @@ export default class ProyectsList extends Component {
                 </div>
                 <BottomNavigation/>
                 </React.Fragment>
-                </StyleRoot>
+               
         )
     }
 }

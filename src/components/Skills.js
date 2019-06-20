@@ -1,25 +1,17 @@
 import React, { Component } from 'react'
 import SocialNetworksBar from './SocialNetworksBar'
 import BottomNavigation from './BottomNavigation'
-import { bounce } from 'react-animations';
-import Radium, {StyleRoot} from 'radium';
 import './skills.css'
-const styles = {
-    bounce: {
-      animation: 'x 2s',
-      animationName: Radium.keyframes(bounce, 'bounce')
-    },
-}
+import Title from './Title';
+
 export default class Skills extends Component {
     render() {
         return (
-            
-                <StyleRoot>
                 <React.Fragment>
                 <SocialNetworksBar/>
                 <section>
                     <div class = "text">
-                <h1  style={styles.bounce}>What I do</h1>
+          <Title  name = "What I do"/>
                 <p>Front-end</p>
                 <span>CSS3, Javascript, ES6, React, Bootstrap</span>
                 <p>Back-end</p>
@@ -34,8 +26,6 @@ export default class Skills extends Component {
                 </div>
                 </section>
                 </React.Fragment>
-           
-            </StyleRoot>
         )
     }
 }
