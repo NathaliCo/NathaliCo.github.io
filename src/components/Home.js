@@ -54,8 +54,7 @@ export default class WelcomePage extends Component {
           <h1 className="nf-r2 " style={styles.bounce}>Nathalie Cortez</h1>
             <h2 className="nf-r1">Frontend Developer / Vanilla Javascript / React / Node </h2>
             <span className="lta-source" style={styles.bounceInRight}>Nathalie Cortez</span>
-            <span className = "descpritionHome">Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
-
+            <span className = "descpritionHome"> Front end developer, antropóloga y músico, tengo 28 años y una de mis actividades favoritas, además de la literatura, es aprender cosas nuevas, razón por la cual decidí adentrarme en el mundo tech. Mi meta a largo plazo es poder generar un cambio social a través de mi código. Me interesa estar actualizada en las nuevas tecnologías, por ello busco  un lugar donde pueda seguir desarrollando mis aptitudes y capacidades como desarrolladora web. Aunque mi primer acercamiento  con la programación ha sido en front end, me gustaría más adelante aprender sobre tecnologías back-end. .   
               </span>
           </div>
           

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-//import './navigation.css'
+
 import './bottomNavigation.css'
 export default class SocialNetworksBar extends Component {
     render() {

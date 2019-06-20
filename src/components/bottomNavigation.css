@@ -5,10 +5,12 @@
   width: 100%;
   /* background-color: #1B2735; */
   opacity:0.9;
+  background-color: #1B2735;
 }
 
 nav.navigation{
   float: left ;
+  background-color: #1B2735;
   /* background-color: #1B2735; */
   width: 100%;
   opacity:0.9;

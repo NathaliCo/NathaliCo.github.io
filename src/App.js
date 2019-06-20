@@ -2,11 +2,12 @@ import React from 'react';
 import HomePage from './components/HomePage'
 import About from './components/About'
 import Skills from './components/Skills'
-import Proyects from './components/Proyects'
+import Proyects from './components/ProyectsList'
 import Contact from './components/Contact'
 import { BrowserRouter, Route } from "react-router-dom";
 import SocialNetworksBar from './components/SocialNetworksBar'
 import BottomNavigation from './components/BottomNavigation'
+
 
 function App() {
   
@@ -22,3 +23,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
