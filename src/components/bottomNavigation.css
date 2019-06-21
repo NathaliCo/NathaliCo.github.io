@@ -1,45 +1,50 @@
 /* TopNav */
-.socialNetworks{
-	width: 100%;
-  height: 5rem;
-  width: 100%;
-  /* background-color: #1B2735; */
-  opacity:0.9;
-  background-color: #1B2735;
+
+.socialNetworks {
+    width: 100%;
+    height: 5rem;
+    width: 100%;
+    /* background-color: #1B2735; */
+    /* opacity:0.9; */
+    background-color: #1B2735;
 }
 
-nav.navigation{
-  float: left ;
-  background-color: #1B2735;
-  /* background-color: #1B2735; */
-  width: 100%;
-  opacity:0.9;
-  position: fixed;
-  bottom: 0;
+nav.navigation {
+    float: left;
+    background-color: #1B2735;
+    /* background-color: #1B2735; */
+    width: 100%;
+    /* opacity: 0.9; */
+    position: fixed;
+    bottom: 0;
 }
 
-div.container a, div.containerNav a
-{
-  float: right;
+div.container a,
+div.containerNav a {
+    float: right;
     color: whitesmoke;
     font: 2.5rem 'Raleway';
     margin: 0px 0.625rem;
-  padding: 0.625rem 0.625rem;
-		position: relative;
-		cursor: pointer;
-    text-decoration:none;
-		
+    padding: 0.625rem 0.625rem;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
 }
-div.container a{
-  margin-top: .5rem;
-  float: right;
+
+div.container a {
+    margin-top: .5rem;
+    float: right;
 }
-div.containerNav a{
-  float: left;
+
+div.containerNav a {
+    float: left;
 }
+
+
 /* Brackets go out */
-div.brackets a:before, div.brackets a:after
-{
+
+div.brackets a:before,
+div.brackets a:after {
     position: absolute;
     opacity: 0;
     font-size: 3.125rem;
@@ -47,80 +52,67 @@ div.brackets a:before, div.brackets a:after
     transition: all 0.3s;
 }
 
-div.brackets a:before
-{
-  content: '<';
+div.brackets a:before {
+    content: '<';
     left: -1rem;
     transform: translateX(0.625rem);
 }
 
-div.brackets a:after
-{
-  content: '>';
+div.brackets a:after {
+    content: '>';
     right: -1rem;
     transform: translateX(-0.625rem);
 }
 
-div.brackets a:hover:before, div.brackets a:hover:after
-{
+div.brackets a:hover:before,
+div.brackets a:hover:after {
     opacity: 1;
     transform: translateX(0rem);
 }
 
-
-
-@media screen and (max-width: 320px){
-  div.containerNav{
-    margin-left: 0%;
-  }
-
-  a.navIcons{
-		position: absolute;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-
-  }
-
-  div.containerNav a
-{
-    text-decoration: none;
-    font: 2rem 'Raleway';
-    margin: 0px 0.1%;
-		position: relative;
-    cursor: pointer;
-}
- 
-  /* Brackets go out */
-  .navigation{
-    width: 100%;
-    height: 5rem;
-   
-    
-  }
-  nav.navigation{
-    margin-left: 0%;
-  }
-  }
-
-  @media screen and (max-width: 425px){
-    
+@media screen and (max-width: 320px) {
+    div.containerNav {
+        margin-left: 0%;
+    }
+    a.navIcons {
+        position: absolute;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
     div.containerNav a {
-    float: left;
-    justify-items: center;
-    font: 2.3rem 'Raleway';
-		position: relative;
-    cursor: pointer;
-    margin: 0px 0.1%;
+        text-decoration: none;
+        font: 2rem 'Raleway';
+        margin: 0px 0.1%;
+        position: relative;
+        cursor: pointer;
+    }
+    /* Brackets go out */
+    .navigation {
+        width: 100%;
+        height: 5rem;
+    }
+    nav.navigation {
+        margin-left: 0%;
+    }
 }
-  }
 
-  @media screen and (min-width: 769px){
-    div.container a{
-      margin-right: 5rem;
+@media screen and (max-width: 425px) {
+    div.containerNav a {
+        float: left;
+        justify-items: center;
+        font: 2.3rem 'Raleway';
+        position: relative;
+        cursor: pointer;
+        margin: 0px 0.1%;
     }
-    div.containerNav a{
-     margin-left: 3rem;
+}
+
+@media screen and (min-width: 769px) {
+    div.container a {
+        margin-right: 5rem;
     }
-  
-  }
+    div.containerNav a {
+        margin-left: 3rem;
+    }
+}
