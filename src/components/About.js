@@ -9,15 +9,15 @@ export default class About extends Component {
         return (
             <React.Fragment>
               <SocialNetworksBar/>
-              <div className = "about">
+              
               <Title  name = "About me"/>
-
-                <p className= "descriptionAbout">Front-end developer, antropologist y Musician. One of my favorite activities, besides literature, is to learn new things, which is why I decided to enter to the tech world. My long-term goal is to be able to generate social change through my code. I am interested in being updated on new technologies, so I look for a place where I can continue developing my skills and abilities as a web developer. Although my first approach with the programming has been in front end, I would like later to learn about back-end technologies. </p>
-               
+                
+                <span className= "descriptionAbout">Front-end developer, antropologist and Musician. One of my favorite activities, besides literature, is to learn new things, which is why I decided to enter to the tech world. My long-term goal is to be able to generate social change through my code. I am interested in being updated on new technologies, so I look for a place where I can continue developing my skills and abilities as a web developer. Although my first approach with the programming has been in front end, I would like later to learn about back-end technologies. </span>
+                <span></span>
                 <a href="../assets/Martha Nathalie Cortez Chávez (Front-end).pdf" download="Martha Nathalie Cortez Chávez (Front-end)">
                 Download CV
                 </a>
-                </div>
+              
                 <BottomNavigation/>
             </React.Fragment>
         )

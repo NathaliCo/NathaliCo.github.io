@@ -13,13 +13,15 @@ export default class Skills extends Component {
                     <div class = "text">
           <Title  name = "What I do"/>
                 <p>Front-end</p>
-                <span>CSS3, Javascript, ES6, React, Bootstrap</span>
+                <span>HTML5/CSS3, Vanilla JS/ES6, React.JS, Bootstrap</span>
                 <p>Back-end</p>
-                <span>NodeJs</span>
+                <span>NodeJS, ExpressJS</span>
                 <p>Cloud</p>
-                <span>Firebase</span>
-                <p>Metodologies It</p>
-                <span>Agile/scrum</span>
+                <span>Firebase, MongoDB</span>
+                <p>Testing</p>
+                <span>TDD/Jest</span>
+                <p>Metodologies It and Tools</p>
+                <span>Agile/scrum/Kanban, Git/GitHub</span>
                 <p>Prototiping</p>
                 <span>Figma</span>
                 <BottomNavigation/>

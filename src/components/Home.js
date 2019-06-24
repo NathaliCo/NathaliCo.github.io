@@ -49,7 +49,7 @@ export default class WelcomePage extends Component {
           <Title  name = "Nathalie Cortez"/>
             <h2 className="nf-r1">Frontend Developer / Vanilla Javascript / React / Node </h2>
             <span className="lta-source" style={styles.bounceInRight}>Nathalie Cortez</span>
-            <span className = "descpritionHome"> Front-end developer
+            <span className = "descpritionHome"> 
               </span>
           </div>
           
