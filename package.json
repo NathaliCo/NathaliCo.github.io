@@ -1,6 +1,6 @@
 {
     "name": "portfolio",
-    "homepage": "https://nathalico.github.io/portfolio",
+    "homepage": "https://nathalico.github.io/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -19,7 +19,7 @@
     "scripts": {
         "now-build": "react-scripts build && mv build dist",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "gh-pages -b master -d build",
         "watch-css": "node-sass-chokidar --include-path ./node_modules/ ./src -o ./src --watch",
         "start-js": "react-scripts start",
         "start": "npm-run-all -p watch-css start-js",
