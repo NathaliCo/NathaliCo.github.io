@@ -30,13 +30,13 @@
         {
             "name": "Data Lovers",
             "img": "http://bestjquery.com/tutorial/hover-effect/demo164/images/img-1.jpg",
-            "tools": "Responsive Design, Vanilla JS, HTML, CSS",
+            "tools": "Responsive Design, JS, HTML, CSS",
             "code": "https://github.com/NathaliCo/GDL002-data-lovers",
             "enviroment": "https://nathalico.github.io/GDL002-data-lovers/src/"
         }, {
             "name": "Cipher",
             "img": "http://bestjquery.com/tutorial/hover-effect/demo164/images/img-1.jpg",
-            "tools": "Vanilla JS",
+            "tools": "JS",
             "code": "https://github.com/NathaliCo/Cipher",
             "enviroment": "https://nathalico.github.io/Cipher/src/"
         }
