@@ -19,6 +19,13 @@
             "tools": "React, React router, Context, HTML, CSS, Bootstrap",
             "code": "https://github.com/NathaliCo/gdl002-burger-queen",
             "enviroment": "https://nathalico.github.io/gdl002-burger-queen/"
+        }, 
+        {
+            "name": "Cipher",
+            "img": "../assets/cipher.js",
+            "tools": "Vanilla Javascript",
+            "code": "https://github.com/NathaliCo/Cipher",
+            "enviroment": "https://nathalico.github.io/Cipher/src/"
         },
         {
             "name": "Md-Links",
@@ -33,13 +40,6 @@
             "tools": "Javascript, Responsive Design, HTML, CSS, Jest",
             "code": "https://github.com/NathaliCo/GDL002-data-lovers",
             "enviroment": "https://nathalico.github.io/GDL002-data-lovers/src/"
-        }, 
-        {
-            "name": "Cipher",
-            "img": "../assets/cipher.js",
-            "tools": "Vanilla Javascript",
-            "code": "https://github.com/NathaliCo/Cipher",
-            "enviroment": "https://nathalico.github.io/Cipher/src/"
         }
     ]
 }

@@ -12,18 +12,23 @@ export default class Skills extends Component {
                 <section>
                     <div class = "text">
           <Title  name = "What I do"/>
-                <p>Front-end</p>
+          <div className="grid-container">
+<p>Front-end</p>
                 <span className ="skill">HTML5/CSS3, JS/ES6, React.JS, Bootstrap</span>
                 <p>Back-end</p>
                 <span className ="skill">NodeJS, ExpressJS</span>
                 <p>Cloud</p>
                 <span className ="skill">Firebase, MongoDB</span>
-                <p>Testing</p>
+<p>Testing</p>
                 <span className ="skill">TDD/Jest</span>
                 <p>Metodologies It and Tools</p>
                 <span className ="skill">Agile/scrum/Kanban, Git/GitHub</span>
                 <p>Prototiping</p>
                 <span className ="skill">Figma</span>
+
+</div>
+                
+               
                 <BottomNavigation/>
                 </div>
                 </section>

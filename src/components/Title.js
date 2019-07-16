@@ -12,7 +12,7 @@ export default function Title(props) {
     return (
         <StyleRoot>
         <div className = "title">
-                      <h1 className="" style={styles.bounce}>{props.name}</h1>
+                      <h1 style={styles.bounce}>{props.name}</h1>
         </div>
         </StyleRoot>
         

@@ -11,3 +11,11 @@ p {
 .skill{
     margin-bottom: 3rem;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    grid-column-gap: 2.75%;
+    margin-left: 20%;
+    margin-bottom: 5rem;
+  }
