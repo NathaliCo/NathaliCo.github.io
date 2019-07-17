@@ -1,65 +1,113 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import firebaseConf from './firebaseConf';
 import SocialNetworksBar from './SocialNetworksBar'
 import BottomNavigation from './BottomNavigation'
-import axios from 'axios';
+import "./contact.css"
 export default class Contact extends Component {
-    state = {
-        name: '',
-        message: '',
-        email: '',
-        sent: false,
-        buttonText: 'Send Message'
-    }
-    formSubmit = (e) => {
-        e.preventDefault()
-      
-        this.setState({
-            buttonText: '...sending'
-        })
-      
-        let data = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
-        }
-        
-        axios.post('API_URI', data)
-        .then( res => {
-            this.setState({ sent: true }, this.resetForm())
-        })
-        .catch( () => {
-          console.log('Message not sent')
-        })
-      }
 
-      resetForm = () => {
+  // inicializamos nuestro estado inicial
+  constructor(props) {
+    super(props);
+    this.state = {
+      form: [],
+      alert: false,
+      alertData: {}
+    };
+  }
+
+  // Mostrar una alerta cuando se envia el formulario
+  showAlert(type, message) {
     this.setState({
-        name: '',
-        message: '',
-        email: '',
-        buttonText: 'Message Sent'
-    })
-}
-    render() {
-        return (
-            <div>
-               <SocialNetworksBar/>
-               <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
-  <label class="message" htmlFor="message-input">Your Message</label>
-  <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required/>
+      alert: true,
+      alertData: { type, message }
+    });
+    setTimeout(() => {
+      this.setState({ alert: false });
+    }, 4000)
+  }
 
-  <label class="message-name" htmlFor="message-name">Your Name</label>
-  <input onChange={e => this.setState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Your Name" value={this.state.name}/>
+  // Con esta funcion borramos todos los elementos del formulario
+  resetForm() {
+    this.refs.contactForm.reset();
+  }
 
-  <label class="message-email" htmlFor="message-email">Your Email</label>
-  <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
+  // Funcion para enviar la informacion del formulario a Firebase Database
+  sendMessage(e) {
+    // Detiene la acción predeterminada del elemento
+    e.preventDefault();
+    
+    // Creamos un objeto con los valores obtenidos de los inputs
+    const params = {
+      name: this.inputName.value,
+      email: this.inputEmail.value,
+      phone: this.inputPhone.value,
+      message: this.textAreaMessage.value
+    };
+    
+    // Validamos que no se encuentren vacios los principales elementos de nuestro formulario
+    if (params.name && params.email && params.phone && params.phone && params.message) {
+      // enviamos nuestro objeto "params" a firebase database
+      firebaseConf.database().ref('form').push(params).then(() => {
+        // Si todo es correcto, actualizamos nuestro estado para mostrar una alerta.
+        this.showAlert('success', 'Your message was sent successfull');
+      }).catch(() => {
+        // Si ha ocurrido un error, actualizamos nuestro estado para mostrar el error 
+        this.showAlert('danger', 'Your message could not be sent');
+      });
+      // limpiamos nuestro formulario llamando la funcion resetform
+      this.resetForm();
+    } else {
+      // En caso de no llenar los elementos necesario despliega un mensaje de alerta
+      this.showAlert('warning', 'Please fill the form');
+    };
+  }
 
-  <div className="button--container">
-      <button type="submit" className="button button-primary">{ this.state.buttonText }</button>
-  </div>
-</form>
-                <BottomNavigation/>
+  render() {
+    return (
+      <React.Fragment>
+         <SocialNetworksBar/>
+        {this.state.alert && <div className={`alert alert-${this.state.alertData.type}`} role='alert'>
+          <div className='container'>
+            {this.state.alertData.message}
+          </div>
+        </div>}
+        <div className='container' style={{ padding: `40px 0px` }}>
+          <div className=''>
+            <div className='form'>
+              <h2>Let's talk</h2>
+              <form onSubmit={this.sendMessage.bind(this)} ref='contactForm' >
+                <div className='form-group'>
+                  <label htmlFor='name'>Name</label>
+                  <input type='text' className='form-control' id='name' 
+                    placeholder='Name' ref={name => this.inputName = name} 
+                  />
+                </div>
+                <div className='form-group'>
+                  <label htmlFor='exampleInputEmail1'>Email</label>
+                  <input type='email' className='form-control' id='email' 
+                    placeholder='Email' ref={email => this.inputEmail = email} 
+                  />
+                </div>
+                <div className='form-group'>
+                  <label htmlFor='phone'>Phone</label>
+                  <input type='number' className='form-control' id='phone' 
+                    placeholder='+52 1' ref={phone => this.inputPhone = phone} 
+                  />
+                </div>
+                <div className='form-group'>
+                  <label htmlFor='message'>Message</label>
+                  <textarea className='form-control' id='message' 
+                    rows='3' ref={message => this.textAreaMessage = message}>
+                  </textarea>
+                </div>
+                <button type='submit' className='btn btn-primary'>Send</button>
+              </form>
             </div>
-        )
-    }
+          </div>
+        </div>
+        <BottomNavigation/>
+     </React.Fragment>
+
+    );
+  }
 }
