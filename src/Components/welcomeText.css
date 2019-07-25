@@ -1,0 +1,139 @@
+.presentation {
+    padding-top: 15%;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.namePresentation {
+    animation-direction: reverse;
+    animation: showup 7s ;
+    animation-iteration-count:1;
+    color: #99B898;
+    font-size: 5.0em;
+    font-weight: 12.5rem;
+    display: inline-block;
+
+}
+
+.frontendPresentation {
+    color: red;
+    font-size: 2.5em;
+    animation: reveal 5s ;
+    animation-iteration-count:1;
+    animation-direction: reverse
+}
+
+.frontendPresentation span {
+   animation: slidein 4s;
+    animation-iteration-count:1;
+    animation-direction: reverse
+}
+
+
+.builtTogether {
+    color: #555;
+    animation: showup 4s;
+    animation-iteration-count:1;
+}
+
+
+.sp-circle-link:hover {
+	background: black;
+	color: #fff;
+}
+
+.sp-circle-link {
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	text-align: center;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	color: #3f1616;
+	font-size: 25px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+    border-radius: 50%;
+	-webkit-animation: fadeInRotate 1s linear 4s backwards;
+	-moz-animation: fadeInRotate 1s linear 4s backwards;
+	-ms-animation: fadeInRotate 1s linear 4s backwards;
+	animation: fadeInRotate 1s linear 4s backwards;
+}
+
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -48px;
+    }
+    20% {
+        margin-left: -48px;
+    }
+    35% {
+        margin-left: -51rem;
+    }
+    100% {
+        margin-left: -51rem;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 1;
+        width: 105%;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        width: 105%;
+    }
+
+    80% {
+   
+  width: 0px;
+ 
+    }
+
+    100% {
+        opacity: 0;
+     
+    }
+}
+
+@keyframes fadeInRotate {
+	0% {
+        opacity: 0;
+		-webkit-transform: scale(0) rotate(360deg);
+		
+	}
+	100% {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(0deg);
+       
+	}
+}
+
+
+@media screen and (max-width: 425px) {
+   
+}
