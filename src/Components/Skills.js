@@ -14,15 +14,17 @@ export default class Skills extends Component {
                  
           <Title  name = "What I do"/>
 <p className = "subtitle">Front-end</p>
-                <span className ="skill"> <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-react-original-wordmark"></i> <i class="devicon-bootstrap-plain-wordmark"></i> </span>
-                <p className = "subtitle">Server</p>
-                <span className ="skill"><i class="devicon-nodejs-plain-wordmark"></i> <i class="devicon-express-original-wordmark"></i> </span>
-                <p className = "subtitle">Database</p>
-                <span className ="skill"><DiFirebase/> <i class="devicon-mongodb-plain-wordmark"></i></span>
+                <span className ="skillIcon"> <i class="devicon-html5-plain-wordmark"></i> <i class="devicon-css3-plain-wordmark"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-react-original-wordmark"></i> <i class="devicon-bootstrap-plain-wordmark"></i> </span>
+<p className = "subtitle">Server</p>
+                <span className ="skillIcon"><i class="devicon-nodejs-plain-wordmark"></i> <i class="devicon-express-original-wordmark"></i> </span>
+<p className = "subtitle">Database</p>
+                <span className ="skillIcon"><DiFirebase/> <i class="devicon-mongodb-plain-wordmark"></i></span>
 <p className = "subtitle">Testing</p>
                 <span className ="skill">TDD/Jest</span>
-                <p className = "subtitle">Metodologies It and Tools</p>
-                <span className ="skill">Agile/scrum/Kanban <i class="devicon-git-plain-wordmark"></i> <i class="devicon-github-plain-wordmark"></i>  <i class="devicon-trello-plain-wordmark"></i></span>
+<p className = "subtitle">Metodologies It</p>
+<span className = "skill">Agile/Scrum/Kanban</span>
+<p className = "subtitle"> Tools</p>
+                <span className ="skillIcon"> <i class="devicon-git-plain-wordmark"></i> <i class="devicon-github-plain-wordmark"></i>  <i class="devicon-trello-plain-wordmark"></i></span>
  <p className = "subtitle">Prototiping</p>
                 <span className ="skill">Figma</span>    
                
