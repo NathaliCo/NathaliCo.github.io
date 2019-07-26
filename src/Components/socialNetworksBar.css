@@ -1,0 +1,49 @@
+.socialNetworks {
+    width: 100%;
+    height: 3.5rem;
+    background-color: #9e9e9e ;
+}
+
+
+ 
+    div.container .ancla,
+    div.containerNav .ancla {
+        float: right;
+        color: whitesmoke;
+        font: 2.5rem 'Raleway';
+        margin: 0px 0.625rem;
+        padding: 0.625rem;
+        position: relative;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+
+    /* Brackets go out */
+
+div.brackets a:before,
+div.brackets a:after {
+    position: absolute;
+    opacity: 0;
+    font-size: 3.125rem;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before {
+    content: '<';
+    left: -1rem;
+    transform: translateX(0.625rem);
+}
+
+div.brackets a:after {
+    content: '>';
+    right: -1rem;
+    transform: translateX(-0.625rem);
+}
+
+div.brackets a:hover:before,
+div.brackets a:hover:after {
+    opacity: 1;
+    transform: translateX(0rem);
+}
