@@ -15,20 +15,15 @@ export default class Skills extends Component {
 
 <p className = "subtitles">Front-end</p>
                 <span className ="skillIcon"> 
-                <i class="devicon-html5-plain-wordmark"></i> 
-                /  <i class="devicon-css3-plain-wordmark"></i> 
-                / <i class="devicon-javascript-plain"></i> 
-                 / <i class="devicon-react-original-wordmark"></i> 
-                 / <i class="devicon-bootstrap-plain-wordmark"></i> 
+                <i class="devicon-html5-plain-wordmark"></i>  <i class="devicon-css3-plain-wordmark"></i>  <i class="devicon-javascript-plain"></i>  <i class="devicon-react-original-wordmark"></i>  <i class="devicon-bootstrap-plain-wordmark"></i> 
                 </span>
 <p className = "subtitles">Server</p>
                 <span className ="skillIcon">
-                    <i class="devicon-nodejs-plain-wordmark"></i> 
-                    /  <i class="devicon-express-original-wordmark"></i> 
+                    <i class="devicon-nodejs-plain-wordmark"></i> <i class="devicon-express-original-wordmark"></i> 
                     </span>
 <p className = "subtitles">Database</p>
                 <span className ="skillIcon"><DiFirebase/> 
-               /  <i class="devicon-mongodb-plain-wordmark"></i>
+                <i class="devicon-mongodb-plain-wordmark"></i>
                 </span>
 <p className = "subtitles">Testing</p>
                 <span className ="skill">TDD/Jest</span>
@@ -36,11 +31,9 @@ export default class Skills extends Component {
 <span className = "skill">Agile/Scrum/Kanban</span>
 <p className = "subtitles"> Tools</p>
                 <span className ="skillIcon"> 
-                <i class="devicon-git-plain-wordmark"></i> 
-                 /<i class="devicon-github-plain-wordmark"></i>  
-                 /<i class="devicon-trello-plain-wordmark"></i>
+                <i class="devicon-git-plain-wordmark"></i>  <i class="devicon-github-plain-wordmark"></i>  <i class="devicon-trello-plain-wordmark"></i>
                 </span>
- <p className = "subtitles">Prototiping</p>
+ <p className = "subtitles">Prototyping</p>
                 <span className ="skill">Figma</span>    
                 </section>
                 </ScrollAnimation>

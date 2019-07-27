@@ -1,13 +1,16 @@
 .socialNetworks {
     width: 100%;
-    height: 3.5rem;
+    padding-top:3rem;
+    height: 7rem;
     background-color: #9e9e9e ;
+    
 }
-
-
- 
+div.container{
+    margin-left: 10%;
+}
     div.container .ancla,
     div.containerNav .ancla {
+    
         float: right;
         color: whitesmoke;
         font: 2.5rem 'Raleway';
@@ -46,4 +49,12 @@ div.brackets a:hover:before,
 div.brackets a:hover:after {
     opacity: 1;
     transform: translateX(0rem);
+}
+
+@media screen and (max-width: 424px){
+    .socialNetworks {
+       padding-top:2rem;
+       height: 6rem;
+    
+    }
 }

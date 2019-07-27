@@ -1,16 +1,18 @@
-.presentation {
-    padding-top: 15%;
-    height: 100vh;
-    width: 100vw;
-}
 
+.presentation {
+    text-align: center;
+    padding-top:10%;
+    height: 140vh;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    }
+  
 .namePresentation {
     text-align: center;
     animation-direction: reverse;
     animation: showup 7s ;
     animation-iteration-count:1;
     color: rgb(148, 148, 148);
-    font-size: 5.0em;
+    font-size: 5rem;
     font-weight: 12.5rem;
     display: inline-block;
 
@@ -141,9 +143,16 @@
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 325px){
     .presentation {
-    padding-top: 45%;
+    padding-top: 1%;
+   
+    }
+}
+
+@media screen and (max-width: 424px){
+    .presentation {
+    padding-top: 10%;
    
     }
 }

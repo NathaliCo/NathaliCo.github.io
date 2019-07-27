@@ -16,15 +16,14 @@ export default class Header extends Component {
               <ScrollAnimation animateIn='fadeIn'
   animateOut='fadeOut'>
               <section class="home">
-            <div class="container">
+            
   <div class="name">Nathalie Cortez</div>
   <div class="subtitle"> Front end Developer + Antropologist + Musician </div>
- 
   <button class="btn waves-effect waves-light" ><a className = "toContact" href = "#contact">Let's talk
     <i class="material-icons right">send</i></a>
   </button>
         
-</div>
+
 </section>
 </ScrollAnimation>
 
