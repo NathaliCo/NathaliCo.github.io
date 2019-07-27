@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a8788b36.chunk.css",
+    "main.js": "/static/js/main.bf5ea73c.chunk.js",
+    "main.js.map": "/static/js/main.bf5ea73c.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.20804fc5.chunk.js": "/static/js/2.20804fc5.chunk.js",
+    "static/js/2.20804fc5.chunk.js.map": "/static/js/2.20804fc5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bd1450f0e979285f56babc9e60a7a27b.js": "/precache-manifest.bd1450f0e979285f56babc9e60a7a27b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a8788b36.chunk.css.map": "/static/css/main.a8788b36.chunk.css.map",
+    "static/media/Martha Nathalie Cortez Chávez (Front-end).pdf": "/static/media/Martha Nathalie Cortez Chávez (Front-end).ac37e039.pdf",
+    "static/media/burgerQueen.png": "/static/media/burgerQueen.faa7e521.png",
+    "static/media/cipher.png": "/static/media/cipher.4452c23e.png",
+    "static/media/dataLovers.png": "/static/media/dataLovers.bfc31526.png",
+    "static/media/mdLinks.png": "/static/media/mdLinks.d29909e9.png",
+    "static/media/organaHome.png": "/static/media/organaHome.c31fb59f.png"
+  }
+}
