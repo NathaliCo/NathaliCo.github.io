@@ -1,6 +1,7 @@
 {
     "proyects": [{
             "name": "X",
+            "description":"X",
             "img": "http://bestjquery.com/tutorial/hover-effect/demo164/images/img-1.jpg",
             "tools": "X",
             "code": "X",
@@ -8,6 +9,7 @@
         },
         {
             "name": "Organa",
+            "description":"X",
             "img": "http://bestjquery.com/tutorial/hover-effect/demo164/images/img-1.jpg",
             "tools": "React.JS",
             "code": "https://github.com/NathaliCo/organa",
@@ -15,6 +17,7 @@
         },
         {
             "name": "Burguer Queen",
+            "description":"A little restaurant of hamburguers, that it's slowly growing in size, it needs an interface to place orders using a tablets, and send those orders to the kitchen to be cooked in a ordered and efficient way. The interface needs to show both menus (breakfast and the menu for the rest of the day),  each one with its products. The user must be capable to choose and add any product and the inteface must show at all times the current products and the total price.",
             "img": "../assets/burgerQueen",
             "tools": "React, React router, Context, HTML, CSS, Bootstrap",
             "code": "https://github.com/NathaliCo/gdl002-burger-queen",
@@ -22,6 +25,7 @@
         }, 
         {
             "name": "Cipher",
+            "description": "This web app it is designed to generate safe paswords fast and easy. To cipher the paswords the caesar's method is applied, which consist in the sustitution of a letter by another one based on a specific number (the number of hops) which dictates the number of positions that the letter will move forward in the alphabet.",
             "img": "../assets/cipher.js",
             "tools": "Vanilla Javascript",
             "code": "https://github.com/NathaliCo/Cipher",
@@ -29,6 +33,7 @@
         },
         {
             "name": "Md-Links",
+            "description": "Markdown Links is a tool for identify all the links that are inside of a file with .md extension or web page, and also helps you to identify broken and live links, and get a stats about those links like; how many links are inside your file, how many of them are alive, and wich ones are repeated.  With this tool you can also search for all the .md files inside a directory and perform all the aformentioned tasks. At the end, it will generate a file called mdLinks.txt located inside the same directory where you are executing the file from, with a response to your request.",
             "img": "../assets/md-Links",
             "tools": "Node.js, File system, Cheerio, Node-fetch, Markdows, Jest",
             "code": "https://github.com/NathaliCo/GDL002-md-links",
@@ -36,10 +41,11 @@
         },
         {
             "name": "Pokeguía",
+            "description": "Pokeguía its a web app based on the aumented reality game called pokemon GO, which main purpose its to be a guide to help new players.",
             "img": "../assets/dataLovers.jpg/",
             "tools": "Javascript, Responsive Design, HTML, CSS, Jest",
             "code": "https://github.com/NathaliCo/GDL002-data-lovers",
-            "enviroment": "https://nathalico.github.io/GDL002-data-lovers/src/"
+            "enviroment": "https://nathalico.github.io/Data-lovers/src/"
         }
     ]
 }
