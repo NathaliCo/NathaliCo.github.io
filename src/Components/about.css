@@ -1,0 +1,12 @@
+.descriptionAbout,.resume {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.resume{
+   
+    font-weight: bolder;
+}
