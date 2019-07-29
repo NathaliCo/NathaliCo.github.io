@@ -1,0 +1,24 @@
+
+.navigation {
+    list-style: none;
+    position: fixed;
+    top: 40%;
+    z-index: 2000;
+ float: right !important;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+
+.btn {
+color: white !important;
+}
+
+@media screen and (max-width: 424px){
+    .navigation {
+    float: left;
+   
+    }
+}
