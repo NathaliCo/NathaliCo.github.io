@@ -11,12 +11,12 @@ export default function Proyect (props) {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4"><p>{props.name}</p> <p>{props.tools}</p><i class="material-icons right">more_vert</i></span>
-    <p><a href={`${props.code}`} target="_blank">Code</a></p>
-    <p><a href={`${props.enviroment}`} target="_blank">Demo</a></p>
+    <p><a className = "cardLink" href={`${props.code}`} target="_blank">Code</a>
+    <a className = "cardLink" href={`${props.enviroment}`} target="_blank">Demo</a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">{props.name}<i class="material-icons right">close</i></span>
-    <p>{props.description}</p>
+    <p className = "description ">{props.description}</p>
   </div>
 </div>
        

@@ -5,8 +5,7 @@ margin-left: 15%;
     margin-bottom: 5rem;
     height: auto;
     text-align: center;
-
-    color:white;
+    color: rgb(59, 58, 58);
 }
 
 .card-title{
@@ -15,4 +14,21 @@ margin-left: 15%;
 
 .card-img-top{
 width:40rem;
+}
+.description{
+    margin-top: 10%;
+    color: rgb(59, 58, 58);
+    font-size:1.5rem;
+}
+
+.card-reveal{
+    background: rgb(218, 210, 210) !important;
+}
+.card-content{
+    background: rgb(218, 210, 210) !important;
+
+}
+.cardLink{
+    font-size: 1.5rem;
+    display: flex;
 }

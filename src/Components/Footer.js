@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './footer.css';
-import { DiMaterializecss} from "react-icons/di";
+import { DiMaterializecss, DiFirebase} from "react-icons/di";
 
 export default class Navigation extends Component {
     render() {
@@ -13,6 +13,7 @@ export default class Navigation extends Component {
                 <i class="devicon-css3-plain-wordmark"></i>
                 <DiMaterializecss/>
                 <i class="devicon-sass-original"></i>
+                <DiFirebase/>
                 </div>
                 Nathalie, Julio 2019
             </section>
